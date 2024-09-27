@@ -1,0 +1,43 @@
+|-----------------------------------------------------------------------------------------------|
+|    *****************************************************************************************  |
+|  - Para empezar un proyecto en Node hay que ejecutar el siguiente comando: npm init           |
+|   - Si quiero saltear todo el proceso de creación de package.json, puedo hacer npm init -y    |
+|    *****************************************************************************************  |
+|-----------------------------------------------------------------------------------------------|
+
+
+|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|*************************************************************************************************************************************************|
+|- Para instalar un paquete de npm hay que ejecutar el siguiente comando: npm install nombre-del-paquete                                          |
+|*************************************************************************************************************************************************|                                          
+|                                                                                                                                                 |
+|*************************************************************************************************************************************************|
+|- Para instalar un paquete de npm como dependencia de desarrollo hay que ejecutar el siguiente comando: npm install nombre-del-paquete --save-dev|
+|- Para instalar un paquete de npm de forma global hay que ejecutar el siguiente comando: npm install -g nombre-del-paquete                       |
+|*************************************************************************************************************************************************|
+|-------------------------------------------------------------------------------------------------------------------------------------------------|
+
+*************************************************************************************************************************************************
+- caret (^): Instala la última versión de la dependencia, pero no la última versión mayor. Por ejemplo, si tengo la versión 1.0.0 y la última versión es 1.1.0, instalará la 1.1.0. Pero si la última versión es 2.0.0, no la instalará.
+- Semantic Versioning: Es una convención para versionar los paquetes de npm. Se compone de tres números separados por puntos: 1.0.0. El primer número es la versión mayor, el segundo la versión menor y el tercero la versión de parche. Si se cambia la versión mayor, es porque se hicieron cambios que no son compatibles con versiones anteriores. Si se cambia la versión menor, es porque se agregaron funcionalidades pero sigue siendo compatible con versiones anteriores. Si se cambia la versión de parche, es porque se hicieron correcciones de errores.
+X.Y.Z
+X: Major --> Cambios que no son compatibles con versiones anteriores.
+Y: Minor --> Se agregaron funcionalidades pero sigue siendo compatible con versiones anteriores.
+Z: Patch --> Correcciones de errores.
+*************************************************************************************************************************************************
+
+*************************************************************************************************************************************************
+Desinstalar un paquete de npm:
+- Para desinstalar un paquete de npm hay que ejecutar el siguiente comando: npm uninstall nombre-del-paquete
+- Para desinstalar un paquete de npm como dependencia de desarrollo hay que ejecutar el siguiente comando: npm uninstall nombre-del-paquete --save-dev
+- Para desinstalar un paquete de npm de forma global hay que ejecutar el siguiente comando: npm uninstall -g nombre-del-paquete
+*************************************************************************************************************************************************
+
+- Para instalar un paquete de npm de una versión específica hay que ejecutar el siguiente comando: npm install nombre-del-paquete@1.0.0
+- Para instalar un paquete de npm de una versión mayor a la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@">1.0.0"
+- Para instalar un paquete de npm de una versión menor a la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@"<1.0.0"
+- Para instalar un paquete de npm de una versión mayor o igual a la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@">=1.0.0"
+- Para instalar un paquete de npm de una versión menor o igual a la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@"<=1.0.0"
+- Para instalar un paquete de npm de una versión compatible con la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@"~1.0.0"
+- Para instalar un paquete de npm de una versión compatible con la que tengo instalada hay que ejecutar el siguiente comando: npm install nombre-del-paquete@"^1.0.0"
+- Para instalar un paquete de npm de una versión específica de una dependencia de desarrollo hay que ejecutar el siguiente comando: npm install nombre-del-paquete --save-dev
