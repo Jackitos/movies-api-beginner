@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch ./clase2/2-express/2-1-express.js",
-    "c1": "node --watch ./clase3/app.js"
+    "c1": "node --watch ./clase3/app.js",
+    "start:mysql": "node --watch ./clase5/server-with-mysql.js",
+    "start:local": "node --watch ./clase5/server-with-local.js"
   },
   "keywords": [
     "curso",
@@ -19,6 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.21.0",
+    "mysql2": "^3.11.3",
     "picocolors": "1.1.0",
     "servor": "4.0.2",
     "zod": "3.23.8"
